@@ -1,19 +1,18 @@
 module.exports = class Sudoku {
 	constructor(board) {
-		this.SIZE = 9
-		this.SUBBOX_SIZE = 3
+		this.SIZE = 9;
+		this.SUBBOX_SIZE = 3;
+		this.DIGITS = new Set("123456789");
 		this.board = board;
 	}
 
-	isValidPuzzle() {
-		const DIGITS = new Set("123456789");
-
+	isPuzzleValid() {
 		// Check if row or col contains duplicated digits
 		let isLineRepeated = line => {
 	        let checked = new Set();
 	        
 	        for (let digit of line) {
-	            if (DIGITS.has(digit) && checked.has(digit)) {
+	            if (this.DIGITS.has(digit) && checked.has(digit)) {
 	                return true;
 	            }
 	            checked.add(digit);
@@ -31,7 +30,7 @@ module.exports = class Sudoku {
 	        for (let row=0; row<this.SUBBOX_SIZE; row++) {
 	            for (let col=0; col<this.SUBBOX_SIZE; col++) {
 	                let digit = this.board[rowOffset + row][colOffset + col]
-	                if (DIGITS.has(digit) && checked.has(digit)) {
+	                if (this.DIGITS.has(digit) && checked.has(digit)) {
 	                    return true;
 	                }
 	                checked.add(digit);
