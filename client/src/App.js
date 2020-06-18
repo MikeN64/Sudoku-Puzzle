@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <button>Play Game!</button>
       </header>
-      <main className="hidden">
+      <main>
 
       </main>
     </div>

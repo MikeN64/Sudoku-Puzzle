@@ -16,4 +16,10 @@ h1 {
 
 main {
   background-color: blue;
+  display: inline-block;
+  height: 35rem;
+  margin-top: 1rem;
+  width: 35rem;
+  max-height: 95vw;
+  max-width: 95vw;
 }
