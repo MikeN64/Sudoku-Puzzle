@@ -64,4 +64,57 @@ module.exports = class Sudoku {
 	    
 	    return true;
 	}
+
+	// Returns true if digit is not found in the specific row and col
+	isDigitValid(row, col, digit) {
+		// Check if digit is in col
+		for (let y=0; y<this.SIZE; y++) {
+			if (this.board[row][y] == digit) {
+				return false;
+			}
+		}
+
+		// Check if digit is in row
+		for (let x=0; x<this.SIZE; x++) {
+			if (this.board[x][col] == digit) {
+				return false;
+			}
+		}
+
+		// Check if digit is in its sub-box
+		let xOffset = Math.floor(row/this.SUBBOX_SIZE) * this.SUBBOX_SIZE;
+		let yOffset = Math.floor(col/this.SUBBOX_SIZE) * this.SUBBOX_SIZE;
+		for (let x=0; x<this.SUBBOX_SIZE; x++) {
+			for (let y=0; y<this.SUBBOX_SIZE; y++) {
+				if (this.board[xOffset + x][yOffset + y] == digit) {
+					return false;
+				}
+			}
+		}
+
+		return true;
+	}
+
+	// Returns true if it can solve the puzzle
+	solvePuzzle() {
+		for (let row=0; row<this.SIZE; row++) {
+			for (let col=0; col<this.SIZE; col++) {
+				let symbol = this.board[row][col];
+				if (!this.DIGITS.has(symbol)) {
+					for (let digit=1; digit<this.SIZE+1; digit++) {
+						if (this.isDigitValid(row, col, digit)) {
+							this.board[row][col] = String(digit);
+							if (this.solvePuzzle()) {
+								return true;
+							}
+							this.board[row][col] = symbol;
+						}
+					}
+					return false;
+				}
+			}
+		}
+
+		return true;
+	}
 };
