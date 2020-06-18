@@ -9,7 +9,95 @@ function App() {
         <button>Play Game!</button>
       </header>
       <main>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell side"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell side"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
 
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell side"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell side"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+
+        <div className="cell bottom"></div>
+        <div className="cell bottom"></div>
+        <div className="cell bottom side"></div>
+        <div className="cell bottom"></div>
+        <div className="cell bottom"></div>
+        <div className="cell bottom side"></div>
+        <div className="cell bottom"></div>
+        <div className="cell bottom"></div>
+        <div className="cell bottom"></div>
+
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell side"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell side"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell side"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell side"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+
+        <div className="cell bottom"></div>
+        <div className="cell bottom"></div>
+        <div className="cell bottom side"></div>
+        <div className="cell bottom"></div>
+        <div className="cell bottom"></div>
+        <div className="cell bottom side"></div>
+        <div className="cell bottom"></div>
+        <div className="cell bottom"></div>
+        <div className="cell bottom"></div>
+
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell side"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell side"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell side"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell side"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell side"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell side"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
       </main>
     </div>
   );
