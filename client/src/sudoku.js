@@ -117,4 +117,11 @@ module.exports = class Sudoku {
 
 		return true;
 	}
+
+	logBoard() {
+		for (let row=0; row<this.SIZE; row++) {
+			let cleanRow = JSON.stringify(this.board[row]);
+			console.log(cleanRow);
+		}
+	}
 };
