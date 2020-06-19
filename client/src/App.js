@@ -8,97 +8,109 @@ function App() {
       <header className="App-header">
         <button>Play Game!</button>
       </header>
-      <main>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell side"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell side"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell side"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell side"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-
-        <div className="cell bottom"></div>
-        <div className="cell bottom"></div>
-        <div className="cell bottom side"></div>
-        <div className="cell bottom"></div>
-        <div className="cell bottom"></div>
-        <div className="cell bottom side"></div>
-        <div className="cell bottom"></div>
-        <div className="cell bottom"></div>
-        <div className="cell bottom"></div>
-
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell side"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell side"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell side"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell side"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-
-        <div className="cell bottom"></div>
-        <div className="cell bottom"></div>
-        <div className="cell bottom side"></div>
-        <div className="cell bottom"></div>
-        <div className="cell bottom"></div>
-        <div className="cell bottom side"></div>
-        <div className="cell bottom"></div>
-        <div className="cell bottom"></div>
-        <div className="cell bottom"></div>
-
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell side"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell side"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell side"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell side"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell side"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell side"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-      </main>
+      <table id="sudoku">
+	<tbody>
+		<tr>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+			<td><input type="text" /></td>
+		</tr>
+	</tbody>
+</table>
     </div>
   );
 }

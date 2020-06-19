@@ -14,28 +14,42 @@ h1 {
   margin: 0;
 }
 
-main {
+input {
+  border: 0;
+	height: 3rem;
+  max-width: 10vw;
+  max-height: 10vw;
+	padding: 0;
+	text-align: center;
+	width: 3rem;
+}
+
+table {
   display: inline-block;
-  height: 35rem;
   margin-top: 1rem;
-  padding: 0;
-  width: 35rem;
-  max-height: 95vw;
-  max-width: 95vw;
 }
 
-.cell {
-  border: 1px solid black;
-  display: inline-block;
-  height: 10%;
-  margin-top: -3px;
-  width: 10%;
+td {
+	border: 1px solid #cdcdcd;
+  border-radius: 5%;
+	height: 3rem;
+  max-width: 10vw;
+  max-height: 10vw;
+	width: 3rem;
 }
 
-.side {
-  border-right: 5px solid black;
+td:first-child {
+	border-left: 2px solid #121212;
 }
 
-.bottom {
-  border-bottom: 5px solid black;
+td:nth-child(3n) {
+	border-right: 2px solid #121212;
+}
+
+tr:first-child td {
+	border-top: 2px solid #121212;
+}
+
+tr:nth-child(3n) td {
+	border-bottom: 2px solid #121212;
 }
