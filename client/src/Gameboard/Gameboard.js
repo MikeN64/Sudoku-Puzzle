@@ -5,103 +5,103 @@ const Gameboard = () => (
   <table id="sudoku">
     <tbody>
       <tr>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
       </tr>
       <tr>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
       </tr>
       <tr>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
       </tr>
       <tr>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
       </tr>
       <tr>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
       </tr>
       <tr>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
       </tr>
       <tr>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
       </tr>
       <tr>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
       </tr>
       <tr>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
-        <td><input type="text" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
+        <td><input type="number" /></td>
       </tr>
     </tbody>
   </table>
