@@ -1,5 +1,5 @@
 # Sudoku-Puzzle
-Full stack solution that allows users to solve Sudoku Puzzles using...
+Full-stack JavaScript solution that allows users to solve Sudoku Puzzles
 
 ## Technologies
 * HMTL
