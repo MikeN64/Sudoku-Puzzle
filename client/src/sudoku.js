@@ -65,23 +65,27 @@ module.exports = class Sudoku {
 	    return true;
 	}
 
-	// Returns true if digit is not found in the specific row and col
-	isDigitValid(row, col, digit) {
-		// Check if digit is in col
+	isDigitOnRowValid(row, digit) {
 		for (let y=0; y<this.SIZE; y++) {
 			if (this.board[row][y] == digit) {
 				return false;
 			}
 		}
 
-		// Check if digit is in row
+		return true;
+	}
+
+	isDigitOnColValid(col, digit) {
 		for (let x=0; x<this.SIZE; x++) {
 			if (this.board[x][col] == digit) {
 				return false;
 			}
 		}
 
-		// Check if digit is in its sub-box
+		return true;
+	}
+
+	isDigitOnSubBoxValid(row, col, digit) {
 		let xOffset = Math.floor(row/this.SUBBOX_SIZE) * this.SUBBOX_SIZE;
 		let yOffset = Math.floor(col/this.SUBBOX_SIZE) * this.SUBBOX_SIZE;
 		for (let x=0; x<this.SUBBOX_SIZE; x++) {
@@ -93,6 +97,14 @@ module.exports = class Sudoku {
 		}
 
 		return true;
+	}
+
+	// Returns true if digit is not found in the specific row and col
+	isDigitValid(row, col, digit) {
+		let rowCond = this.isDigitOnRowValid(row, digit);
+		let colCond = this.isDigitOnColValid(col, digit);
+		let boxCond = this.isDigitOnSubBoxValid(row, col, digit);
+		return [rowCond, colCond, boxCond].every(cond => cond);
 	}
 
 	// Returns true if it can solve the puzzle
