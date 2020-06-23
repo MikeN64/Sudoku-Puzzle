@@ -130,6 +130,12 @@ module.exports = class Sudoku {
 		return true;
 	}
 
+	clearBoard() {
+		for (let row=0; row<this.SIZE; row++) {
+			this.board[row].fill("");
+		}
+	}
+
 	logBoard() {
 		for (let row=0; row<this.SIZE; row++) {
 			let cleanRow = JSON.stringify(this.board[row]);
