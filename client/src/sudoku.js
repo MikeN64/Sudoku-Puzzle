@@ -132,7 +132,27 @@ module.exports = class Sudoku {
 
 	clearBoard() {
 		for (let row=0; row<this.SIZE; row++) {
-			this.board[row].fill("");
+			this.board[row].fill(" ");
+		}
+	}
+
+	// Set the board to a new generated one based on the number of cells to be fill
+	newBoard(numberOfCells) {
+		let random_number = () => Math.floor(Math.random() * this.SIZE);
+
+		this.clearBoard();
+		while (numberOfCells > 0) {
+			let row = random_number();
+			let col = random_number();
+			let cell = this.board[row][col];
+			if (!this.DIGITS.has(cell)) {
+				let digit = String(random_number() + 1);
+				while (!this.isDigitValid(row, col, digit)) {
+					digit = String(random_number() + 1);
+				}
+				this.board[row][col] = digit;
+				numberOfCells--;
+			}
 		}
 	}
 
